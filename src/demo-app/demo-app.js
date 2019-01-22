@@ -48,9 +48,6 @@ class DemoApp extends PolymerElement {
           height: 500px;
           width: 100%;
         }
-        :host #flags {
-          display: none;
-        }
         :host .selected-header {
           display: block;
           margin-left: 10px;
