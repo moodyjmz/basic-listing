@@ -49,9 +49,9 @@ class DemoApp extends PolymerElement {
           width: 100%;
         }
         :host .selected-header {
-          display: block;
-          margin-left: 10px;
           @apply --paper-font-headline;
+          margin-left: 10px;
+          display: block;
           padding: 25px 0 5px 0;
         }
       </style>
