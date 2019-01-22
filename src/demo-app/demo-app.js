@@ -9,6 +9,11 @@ import '../demo-country-item/demo-country-item.js';
 import '../demo-countries/demo-countries.js';
 
 // TODO add selection persistence when filter is applied
+// Either hook into iron-list and match attempted selection changes against what is in the filteredList
+// and only allow visible items to change selection
+// Or, persist the selected state to the item themselves - this is probably a nicer approach as it also means the
+// selection state can stored and used to populate the app initially, however this would require more work
+// as we would effectively ignore iron-list's built in selection system
 /**
  * @customElement
  * @polymer
