@@ -88,7 +88,7 @@ class DemoCountries extends PolymerElement {
 
   /**
    * Perform the flag caching by appending imgs to the hidden #flags element
-   * Will also update the `cachedFlags` array; and clear `_nextFlagsToCache` upon completion
+   * Will also update the `_cachedFlags` array; and clear `_nextFlagsToCache` upon completion
    * @private
    */
   _cacheNewFlags() {
