@@ -48,9 +48,6 @@ class DemoApp extends PolymerElement {
           height: 500px;
           width: 100%;
         }
-        :host #selected-countries-col {
-          padding-top: 62px;
-        }
         :host #flags {
           display: none;
         }
