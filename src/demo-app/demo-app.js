@@ -25,7 +25,7 @@ class DemoApp extends PolymerElement {
     this._renderTracker = 0;
     /**
      * Current filter value
-     * @type {undefined | String}
+     * @type {?String}
      * @private
      */
     this._filterValue = undefined;
