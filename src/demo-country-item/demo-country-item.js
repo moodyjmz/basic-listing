@@ -9,6 +9,10 @@ export class DemoCountryItem extends PolymerElement {
         :host {
           cursor: pointer;
         }
+        /*
+          part is a reference to a future feature and there to allow public styling of internal ShadowDOM
+          https://drafts.csswg.org/css-shadow-parts-1/
+         */
         :host [part=list-item] {
           box-sizing: border-box;
           font-family: Arial, sans-serif;
