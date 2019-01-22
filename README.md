@@ -6,7 +6,7 @@ Loads country and flag information in and ties together.
 
 Uses virtualised listing and attempts to mitigate the repeated image loading.
 
-*TODO selection persistence*
+*TODO selection persistence when filter is applied*
 
 This is just to experiment with iron-list.
 
