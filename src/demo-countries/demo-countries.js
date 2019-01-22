@@ -60,6 +60,7 @@ class DemoCountries extends PolymerElement {
         return {
           label: country.name,
           code: code,
+          // could potentially check for the image at this point, but for now assume it exists
           imgSrc: `/node_modules/flag-icon-css/flags/4x3/${code}.svg`
         };
       });
