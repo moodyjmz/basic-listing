@@ -1,10 +1,9 @@
 import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
 import { Debouncer } from '@polymer/polymer/lib/utils/debounce.js';
 import { idlePeriod } from '@polymer/polymer/lib/utils/async.js';
-import { afterNextRender } from '@polymer/polymer/lib/utils/render-status.js';
 
 // list of countries for labels and matching to flag images
-import { isoMapping } from "./iso-countries";
+import { isoMapping } from './iso-countries.js';
 
 /**
  * @customElement
@@ -81,9 +80,7 @@ class DemoCountries extends PolymerElement {
       return;
     }
     this._nextFlagsToCache.push(country); // enqueue the addition
-    this._doFlagCacheJob = Debouncer.debounce(this._doFlagCacheJob, idlePeriod, () => {
-      afterNextRender(this, this._cacheNewFlags);
-    });
+    this._doFlagCacheJob = Debouncer.debounce(this._doFlagCacheJob, idlePeriod, this._cacheNewFlags.bind(this));
   }
 
   /**
