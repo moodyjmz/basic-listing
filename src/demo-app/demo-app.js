@@ -171,6 +171,8 @@ class DemoApp extends PolymerElement {
     this.filteredCountries = this.countryData.filter((item) => {
       return filterRegExp.test(item.label);
     });
+    // Ensure all items update as we aren't using Polymer array API to update
+    // Also elements could have other actions performed on them that won't be affected by data API
     this._renderTracker++;
   }
 
