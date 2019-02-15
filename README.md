@@ -18,6 +18,8 @@ Main code is in the `src` dir.
 
 This is just to experiment with iron-list.
 
+The image caching bit is not really a good idea and just done because.... meh, can't catch and just wanted to see what happened.
+
 ## Install the Polymer-CLI
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
