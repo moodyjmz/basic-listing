@@ -18,7 +18,7 @@ Main code is in the `src` dir.
 
 This is just to experiment with iron-list.
 
-The image caching bit is not really a good idea and just done because.... meh, can't cach and just wanted to see what happened.
+The image caching bit is not really a good idea and just done because.... meh, can't cache and just wanted to see what happened.
 
 ## Install the Polymer-CLI
 
