@@ -116,6 +116,10 @@ class DemoApp extends PolymerElement {
        */
       filteredCountries: {
         type: Object
+      },
+      debounceRate: {
+        type: Number,
+        value 200
       }
     }
   }
@@ -159,7 +163,7 @@ class DemoApp extends PolymerElement {
    */
   _filterChanged(e) {
     this._filterJob = Debouncer.debounce(this._filterJob,
-      timeOut.after(100), () => {
+      timeOut.after(this.debounceRate), () => {
         this._runFilter(e.detail.value);
       }
     );
